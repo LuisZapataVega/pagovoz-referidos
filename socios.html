@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Socio Pago Voz | Herramientas de Venta</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header class="hero" style="padding-top:60px;">
+            <h1 style="font-size: 2.5rem;">💰 Gana Dinero con <span style="display:block; color:var(--accent)">Pago Voz</span></h1>
+            <p>Convierte tus contactos en ingresos, recomendando la aplicación <strong>Pago Voz</strong>.</p>
+        </header>
+
+        <!-- EARNINGS -->
+        <section id="earnings" style="padding-top: 0;">
+            <h2 class="section-title" style="margin-bottom: 0;">¿Cuánto <span>ganas</span>?</h2>
+            <p style="color:var(--accent); font-weight:700; margin-bottom: 25px; font-size: 0.9rem;">si vendes un:</p>
+            <div class="price-grid">
+                <div class="price-card">
+                    <p class="price-title">Plan Mensual (S/ 9.90)</p>
+                    <p class="price-val">S/ 3</p>
+                    <p class="price-sub">Por cliente</p>
+                </div>
+                <div class="price-card">
+                    <p class="price-title">6 Meses (S/ 49.90) 🔥</p>
+                    <p class="price-val">S/ 15</p>
+                    <p class="price-sub">Por cliente</p>
+                </div>
+                <div class="price-card featured selected">
+                    <div class="badge-featured">RECOMENDADO</div>
+                    <p class="price-title">1 Año (S/ 99.90) 🔥</p>
+                    <p class="price-val">S/ 30</p>
+                    <p class="price-sub">Por cliente</p>
+                </div>
+            </div>
+            <p style="text-align:center; font-weight:800; color:var(--accent); margin-top:20px; font-size:0.9rem;">
+                "Pago único por cada cliente nuevo"
+            </p>
+        </section>
+
+        <!-- STEPS -->
+        <section id="how-it-works">
+            <h2 class="section-title">¿Cómo <span>funciona</span>?</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <div>
+                        <h4 style="margin-bottom:5px; color:#fff;">Muestras la App</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Enseña cómo funciona la confirmación por voz a dueños de negocios, amigos y familiares.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <div>
+                        <h4 style="margin-bottom:5px; color:#fff;">Comparte tu Link</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Comparte tu enlace personal para que tu cliente vea la información de cómo funciona la aplicación.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <div>
+                        <h4 style="margin-bottom:5px; color:#fff;">Cobra tu Comisión</h4>
+                        <p style="font-size:0.85rem; color:var(--text-muted);">Cuando el cliente compra un plan, ¡tú recibes tu pago al instante!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DASHBOARD TOOLS -->
+        <section id="generator" class="ref-hero-box">
+            <h2 class="section-title">Comparte la <span>App</span></h2>
+            
+            <p style="margin-bottom:20px; font-weight:600; font-size:0.9rem; color:var(--text-muted);">Usa el botón de abajo para copiar el enlace de ventas:</p>
+
+            <button onclick="copyText(window.location.origin)" class="btn-main" style="background:#fff; color:#000; padding:15px; font-size:1rem; margin-bottom:25px;">
+                <i class="fas fa-copy"></i> COPIAR ENLACE DE VENTAS
+            </button>
+
+            <div class="or-separator">O ENVIAR INFORMACIÓN POR WHATSAPP</div>
+            
+            <div class="tool-buttons">
+                <button class="btn-tool" onclick="shareApp('full_info')" style="background:#25d366; color:#fff;">
+                    <i class="fab fa-whatsapp"></i> ENVIAR INFO
+                </button>
+                <button class="btn-tool video" onclick="shareApp('video')" style="background:#ff0000; color:#fff;">
+                    <i class="fas fa-play"></i> ENVIAR VIDEO
+                </button>
+                <button class="btn-tool" onclick="shareApp('promo')" style="background:#ff9f43; color:#fff;">
+                    <i class="fas fa-tags"></i> ENVIAR PLANES
+                </button>
+                <button class="btn-tool" onclick="shareApp('payments')" style="background:#6a11cb; color:#fff;">
+                    <i class="fas fa-university"></i> ENVIAR MÉTODOS DE PAGO
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="text-align:center; padding:40px;">
+        <p style="margin-bottom:15px; font-weight:600; opacity:0.8;">&copy; 2026 Pago Voz. Todos los derechos reservados 💸📲</p>
+        <a href="index" class="footer-link">Ver Landing Page</a>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
